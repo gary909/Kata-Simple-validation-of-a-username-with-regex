@@ -1,6 +1,10 @@
 function validateUsr(username) {
-    res =  //regex here/.test(username) ;
-    return res;
+    // res =  //regex here/.test(username) ;
+    if (username.length >= 4 && username == username.toLowerCase() && /\s/.test(username) == false) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 console.log(validateUsr('asddsa')); // true
